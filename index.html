@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Snake</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <dialog open>
+      <h2>New Game</h2>
+      <form method="dialog" id="new-game-form">
+        <fieldset>
+          <legend>Game Options</legend>
+          <label for="screen-width">Screen Width:</label>
+          <input type="number" id="screen-width" min="1" value="32" required autofocus>
+          <br>
+          <label for="screen-height">Screen Height:</label>
+          <input type="number" id="screen-height" min="1" value="32" required>
+          <br>
+          <label for="starting-length">Starting Length:</label>
+          <input type="number" id="starting-length" min="1" value="3" required>
+          <br>
+          <label for="amount-of-apples">Amount of Apples:</label>
+          <input type="number" id="amount-of-apples" min="1" value="1" required>
+          <br>
+          <label for="apple-length-bonus">Apple Length Bonus:</label>
+          <input type="number" id="apple-length-bonus" min="1" value="1" required>
+          <br>
+          <label for="game-speed">Game Speed:</label>
+          <input type="range" id="game-speed" min="1" max="100" value="50" list="tick-marks">
+          <datalist id="tick-marks">
+            <option value="1" label="Slow"></option>
+            <option value="25"></option>
+            <option value="50"></option>
+            <option value="75"></option>
+            <option value="100" label="Fast"></option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <legend>Settings</legend>
+          <label for="snake1-control-scheme">Control Scheme:</label>
+          <select id="snake1-control-scheme">
+            <option value="UDLR" selected>▲ ▼ ◀ ▶</option>
+            <option value="WASD">W A S D</option>
+            <option value="IJKL">I J K L</option>
+            <option value="HJKL">H J K L (VIM)</option>
+          </select>
+        </fieldset>
+        <input type="submit" value="Start">
+        <input type="reset">
+      </form>
+    </dialog>
+    <article>
+      <h1>Snake</h1>
+      <noscript>
+        <h2>Error</h2>
+        <p>Please enable JavaScript to play this game.</p>
+      </noscript>
+      <nav>
+        <button id="pause">Pause</button>
+      </nav>
+      <span id="stats-hud">
+        Score:
+      </span>
+      <canvas id="game-view" tabindex="0">Please use a browser that supports the Canvas API to play this game.</canvas>
+      <nav id="onscreen-controls">
+        <span>
+          <span>Controls</span>
+          <br>
+          <button id="p1-go-up" title="Go up">▲</button>
+          <button id="p1-go-left" title="Go left">◀</button>
+          <button id="p1-go-right" title="Go right">▶</button>
+          <button id="p1-go-down" title="Go down">▼</button>
+        </span>
+      </nav>
+    </article>
+    <hr>
+    <footer>
+      <address>
+        Site design © 2024 Alexis Andrew Martel. All rights reserved. The
+        <a href="https://github.com/alexis-martel/Snake" rel="noopener noreferrer nofollow" target="_blank">source code</a>
+        of this page is available under an MIT license.
+      </address>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+
+</html>

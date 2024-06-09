@@ -1,0 +1,22 @@
+:root {
+  color-scheme: light dark;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+canvas {
+  border: solid;
+  image-rendering: pixelated; /* Disables unwanted smoothing */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
