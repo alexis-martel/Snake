@@ -1,5 +1,5 @@
 /*
-Snake Pong
+Snake
 Copyright (C) 2024  Alexis Andrew Martel
 
 This program is free software: you can redistribute it and/or modify
