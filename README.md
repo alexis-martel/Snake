@@ -2,7 +2,7 @@
 
 ## Play
 
-[Click here](https://graphe.me/Snake/index.html) to play the game in your browser. Thanks for playing!
+[Click here](https://snake.graphe.me/) to play the game in your browser. Thanks for playing!
 
 ## License
 
